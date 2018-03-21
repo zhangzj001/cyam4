@@ -1,0 +1,32 @@
+#define GETNAME(name, zzzz) {name , zzzz}#dnl
+
+#define SAY_HELLO(name) {
+    hello, name
+
+    #define SAY_HELLO2(_name2_){
+        fuck name, _name2_
+    }
+}#dnl
+
+#GETNAME(zim, coco)
+
+#each({$$}, aa, bb, cc)
+
+#define mystr(_name_) {
+    #ifnil(_name_){
+        aaa
+    }#else{
+        _name_
+    }
+}
+#mystr
+
+-[
+#SAY_HELLO(abc)
+]-
+
+#define READ_FILE(_file_){
+    #fread(_file_)
+}
+
+

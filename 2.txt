@@ -1,0 +1,2 @@
+#include_once(1.txt)
+#include_once(1.txt)
